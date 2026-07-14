@@ -1,0 +1,8 @@
+baseURL = 'https://learning.lllllan.cn'
+locale = 'en-us'
+title = 'Learning Log'
+theme = 'ananke'
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
