@@ -1,8 +1,13 @@
 baseURL = 'https://learning.lllllan.cn'
 locale = 'en-us'
 title = 'Learning Log'
-theme = 'ananke'
+theme = 'papermod'
 
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+[params]
+  disableSpecial1stPost = true
+  ShowToc = true
+  TocOpen = true   # 默认展开，可选
