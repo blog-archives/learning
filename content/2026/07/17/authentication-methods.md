@@ -5,6 +5,12 @@ categories = ['阅读']
 tags = []
 +++
 
+[会话认证与令牌认证：你应该选择哪一种？](https://www.authgear.com/post/session-vs-token-authentication/)
+
+Session Authentication 和 Token Authentication 经常被拿来比较，但文章想表达的是：**它们并不是谁取代谁，而是在不同架构下管理登录状态的两种方案。** Session 将用户状态保存在服务器，由 Cookie 携带 Session ID；Token 则把认证凭据交给客户端保存，每次请求携带 Token，由服务端验证即可。两者的区别，本质上是 **状态保存在服务器还是客户端**。
+
+文章进一步从扩展性、安全性、跨域支持、注销机制等方面比较两种方案的取舍。真正需要记住的是，**Session 更适合传统 Web 应用，Token 更适合 API、移动端和分布式系统**。选择的关键不是 Token 比 Session 更先进，而是谁更符合应用的架构和业务需求。
+
 [什么是 OAuth 2.0？](https://auth0.com/intro-to-iam/what-is-oauth-2)
 
 OAuth 2.0 容易被误解成一种登录协议，但它真正解决的是 **授权（Authorization）**，即用户如何在 **不暴露账号密码** 的前提下，允许第三方应用访问自己在其他服务中的资源。文章围绕这一核心展开，解释了 Resource Owner、Client、Authorization Server、Resource Server 等角色，以及 Authorization Code、Client Credentials 等常见授权流程，说明 Access Token 是如何在这些角色之间流转并承载授权结果的。
