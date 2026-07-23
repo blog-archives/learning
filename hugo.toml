@@ -7,7 +7,17 @@ theme = 'papermod'
   [caches.images]
     dir = ':cacheDir/images'
 
+[markup]
+  [markup.highlight]
+    style = 'monokai'        # 主题名
+    lineNos = true           # 行号
+    lineNumbersInTable = true
+    noClasses = false        # false 时用 CSS class，方便自定义
+    codeFences = true
+    guessSyntax = true
+
 [params]
+  ShowCodeCopyButtons = true
   disableSpecial1stPost = true
   ShowToc = true
   TocOpen = true   # 默认展开，可选
